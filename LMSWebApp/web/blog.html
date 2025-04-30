@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>School Blog – Fortitude LMS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .hero {
+                background-image: url('https://images.unsplash.com/photo-1581090700227-1e8b74d2eaf0?auto=format&fit=crop&w=1350&q=80');
+                background-size: cover;
+                background-position: center;
+                color: white;
+                padding: 80px 20px;
+                text-align: center;
+            }
+            .blog-post img {
+                max-height: 200px;
+                object-fit: cover;
+            }
+            .hero::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+                z-index: 1;
+            }
+            .hero .container {
+                position: relative;
+                z-index: 2;
+            }
+            .hero {
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fortitude LMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4 fw-bold">School News & Updates</h1>
+                <p class="lead">Stay informed with the latest announcements and stories from our school community.</p>
+            </div>
+        </section>
+
+
+        <!-- Blog Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Blog Post 1 -->
+                    <div class="col-md-6">
+                        <div class="card blog-post">
+                            <img src="https://images.unsplash.com/photo-1573164713347-df1e6109c79e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Back to School">
+                            <div class="card-body">
+                                <h5 class="card-title">Back to School: Term 2 Begins</h5>
+                                <p class="card-text"><small class="text-muted">Posted by Admin on April 5, 2025</small></p>
+                                <p class="card-text">Welcome back! We’re excited to kick off Term 2 with new goals, new energy, and exciting activities ahead.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="col-md-6">
+                        <div class="card blog-post">
+                            <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Science Fair">
+                            <div class="card-body">
+                                <h5 class="card-title">Annual Science Fair Highlights</h5>
+                                <p class="card-text"><small class="text-muted">Posted by Admin on March 20, 2025</small></p>
+                                <p class="card-text">Our learners amazed everyone with their creative projects and innovative experiments. Here are the highlights!</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More blog entries can be added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-white bg-dark py-3">
+            &copy; 2025 Fortitude IT Solutions. All Rights Reserved.
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

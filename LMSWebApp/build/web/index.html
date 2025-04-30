@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fortitude School Application System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600051782879-4a5c8df87b9c?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .apply-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .hero {
+      background-color: #111;
+      padding: 30px 0;
+    }
+
+    .carousel img {
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    .apply-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Style for the buttons */
+    .action-btns .btn {
+      margin: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fortitude LMS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container pb-5">
+      <h1 class="display-5 fw-bold">Empowering High School Education</h1>
+      <p class="lead">A digital platform that simplifies applications, boosts communication, and inspires learning.</p>
+      
+      <!-- Action Buttons -->
+      <div class="action-btns">
+        <a href="login.html" class="btn btn-primary btn-lg">Login</a>
+        <a href="register.html" class="btn btn-secondary btn-lg">Register</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Info Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=500&q=80" class="img-fluid rounded mb-3" alt="Students">
+          <h5>Student Focused</h5>
+          <p>We help learners thrive through structured digital access to learning content, applications, and news.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=500&q=80" class="img-fluid rounded mb-3" alt="Teachers">
+          <h5>Admin Empowered</h5>
+          <p>School staff can manage student data, announcements, and applications easily through the Admin Portal.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=500&q=80" class="img-fluid rounded mb-3" alt="Vision">
+          <h5>Built for Growth</h5>
+          <p>This system is scalable for multiple schools, each with their own custom content and database.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-dark py-3">
+    &copy; 2025 Fortitude IT Solutions. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
